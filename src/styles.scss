@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html, body { height: 100%; }
+body {  font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+ol, ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.horizontal-line {
+  margin: 30px 0;
+}
+
+.custom-search-input {
+  font-size: 11px;
+  .mat-form-field {
+    padding: 10px 0;
+  }
+  .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+  }
+  .mat-form-field-suffix {
+    font-size: 16px;
+  }
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.product-card {
+  width: 15%;
+  transition: all 400ms ease;
+  margin: 10px;
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+  &:hover {
+    transition: all 400ms ease;
+    transform: scale(1.1);
+  }
+  &_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    right: 10px;
+  }
+  &_desc {
+    margin: 10px 0;
+  }
+  &_rate {
+    display: flex;
+    margin: 10px 0;
+  }
+  &_rate-icon {
+    font-size: 16px;
+    width: 15px!important;
+    //line-height: 0;
+  }
+  &_reviews {
+    margin-left: 10px;
+  }
+  &_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_price {
+    font-size: 24px;
+    color: rgba(236, 95, 95, 0.85);
+  }
+
+
+
+
+  .mat-card-content {
+    margin-bottom: 0;
+  }
+  .mat-card-actions {
+    padding: 0;
+  }
+  .mat-icon-button.mat-icon {
+    width: 34px;
+    height: 32px;
+  }
+}
