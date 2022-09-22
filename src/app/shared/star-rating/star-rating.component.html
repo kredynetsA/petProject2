@@ -1,0 +1,7 @@
+<div class="rating_wrapper" >
+  <mat-icon *ngFor="let star of stars"
+            class="rating_icon"
+            [ngClass]="{'material-symbols-outlined': !star.isActive}">
+    star
+  </mat-icon>
+</div>

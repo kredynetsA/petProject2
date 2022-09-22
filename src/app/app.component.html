@@ -4,9 +4,9 @@
 
   <hr class="horizontal-line">
 
-  <div class="card-wrapper">
+  <div class="card_wrapper">
 
-    <app-card></app-card>
+    <app-card class="card" *ngFor="let product of products" [product]="product"></app-card>
   </div>
 
 </div>
