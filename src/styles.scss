@@ -75,6 +75,16 @@ ol, ul {
 }
 
 .custom-card {
+  &_wrapper {
+    display: flex;
+  }
+  &_card {
+    width: 13%;
+    margin: 0 10px;
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
   .mat-card-content {
     margin-bottom: 0;
   }
