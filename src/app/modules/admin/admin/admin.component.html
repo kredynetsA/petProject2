@@ -1,0 +1,20 @@
+<mat-drawer-container class="shop-side-nav" >
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <ul class="nav">
+      <li class="nav_item">
+        <a routerLink="products">Products</a>
+      </li>
+      <li class="nav_item">
+        <a routerLink="orders">Orders</a>
+      </li>
+    </ul>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>
