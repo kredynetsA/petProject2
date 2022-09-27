@@ -40,6 +40,9 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     MatCardModule,
   ],
   providers: [],
+  exports: [
+    HeaderComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

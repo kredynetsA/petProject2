@@ -1,20 +1,32 @@
 <mat-drawer-container class="shop-side-nav" >
-  <mat-drawer #drawer class="example-sidenav" mode="side">
+  <mat-drawer #drawer opened class="example-sidenav" mode="side" >
     <ul class="nav">
-      <li class="nav_item">
-        <a routerLink="products">Products</a>
+      <li class="nav_item"
+          routerLinkActive="nav-active-button"
+          routerLink="products">
+        <a class="nav_item-link">Products</a>
       </li>
-      <li class="nav_item">
-        <a routerLink="orders">Orders</a>
+      <li class="nav_item"
+          routerLinkActive="nav-active-button"
+          routerLink="orders">
+        <a class="nav_item-link">Orders</a>
+      </li>
+      <li class="nav_item"
+          routerLinkActive="nav-active-button"
+          routerLink="orders">
+        <a class="nav_item-link">
+<!--          <mat-icon>logout</mat-icon>-->
+          Logout
+        </a>
       </li>
     </ul>
   </mat-drawer>
 
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
-    <router-outlet></router-outlet>
+  <div class="shop-side-nav_content">
+<!--    <div class="container">-->
+<!--    <app-header></app-header>-->
+      <router-outlet></router-outlet>
+<!--    </div>-->
   </div>
 
 </mat-drawer-container>
