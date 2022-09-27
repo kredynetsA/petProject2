@@ -5,6 +5,7 @@ import {AdminRoutingModule} from "./admin-routing.modules";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { OrdersPageComponent } from './pages/orders-page/orders-page.component';
+import {MatIconModule} from "@angular/material/icon";
 
 
 
@@ -18,6 +19,7 @@ import { OrdersPageComponent } from './pages/orders-page/orders-page.component';
     AdminRoutingModule,
     CommonModule,
     MatSidenavModule,
+    MatIconModule
 
   ],
   providers: [],

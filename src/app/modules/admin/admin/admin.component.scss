@@ -1,0 +1,32 @@
+.nav {
+  height: inherit;
+  background: #3549b0;
+  &_item {
+    padding: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: aliceblue;
+    &:hover {
+      background: #051fb0;
+    }
+  }
+  &_item-link {
+    color: white;
+  }
+
+}
+
+
+.nav-active-button {
+  background: #051fb0;
+}
+.shop-side-nav {
+  width: 100%;
+  height: 100%;
+  .mat-drawer-side {
+    width: 20%;
+  }
+  &_content {
+    padding: 30px;
+  }
+}
