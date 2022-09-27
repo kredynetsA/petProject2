@@ -15,13 +15,15 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatCardModule} from "@angular/material/card";
 import { CardComponent } from './shared/card/card.component';
 import { StarRatingComponent } from './shared/star-rating/star-rating.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CardComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

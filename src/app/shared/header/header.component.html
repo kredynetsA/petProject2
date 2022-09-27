@@ -4,7 +4,7 @@
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
       </button>
-      <span>My App</span>
+      <span><a routerLink="/home">My App</a></span>
     </div>
 
     <div class="header_section header_section__search custom-search-input ">
@@ -16,7 +16,10 @@
     </div>
 
     <div class="header_section">
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <button mat-icon-button
+              routerLink="/admin"
+              class="example-icon favorite-icon"
+              aria-label="Example icon-button with heart icon">
         <mat-icon>person</mat-icon>
       </button>
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
