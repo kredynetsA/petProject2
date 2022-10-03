@@ -15,7 +15,7 @@
     <p class="product-card_desc">{{product.title}}</p>
     <div class="product-card_rate">
       <app-star-rating [productRating]="product.rating"></app-star-rating>
-      <span class="product-card_reviews">{{product.reviews.length}} reviews</span>
+      <span class="product-card_reviews">{{product?.reviews.length}} reviews</span>
     </div>
 
 

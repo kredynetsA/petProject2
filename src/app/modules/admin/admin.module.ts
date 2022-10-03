@@ -8,6 +8,7 @@ import { OrdersPageComponent } from './pages/orders-page/orders-page.component';
 import {MatIconModule} from "@angular/material/icon";
 import {SharedModule} from "../shared/shared.module";
 import {BrowserModule} from "@angular/platform-browser";
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -22,7 +23,7 @@ import {BrowserModule} from "@angular/platform-browser";
     CommonModule,
     MatSidenavModule,
     MatIconModule,
-    SharedModule
+    SharedModule,
 
   ],
   providers: [],
