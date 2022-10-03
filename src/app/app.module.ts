@@ -6,23 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CommonModule} from "@angular/common";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MatButtonModule} from "@angular/material/button";
-import { HeaderComponent } from './shared/header/header.component';
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatIconModule} from "@angular/material/icon";
-import {MatInputModule} from "@angular/material/input";
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatCardModule} from "@angular/material/card";
-import { CardComponent } from './shared/card/card.component';
-import { StarRatingComponent } from './shared/star-rating/star-rating.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import {SharedModule} from "./modules/shared/shared.module";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    CardComponent,
-    StarRatingComponent,
     HomePageComponent
   ],
   imports: [
@@ -32,17 +21,10 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatCardModule,
+    SharedModule
+
   ],
   providers: [],
-  exports: [
-    HeaderComponent
-  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

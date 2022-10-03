@@ -6,6 +6,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { OrdersPageComponent } from './pages/orders-page/orders-page.component';
 import {MatIconModule} from "@angular/material/icon";
+import {SharedModule} from "../shared/shared.module";
+import {BrowserModule} from "@angular/platform-browser";
 
 
 
@@ -13,13 +15,14 @@ import {MatIconModule} from "@angular/material/icon";
   declarations: [
     AdminComponent,
     ProductsPageComponent,
-    OrdersPageComponent
+    OrdersPageComponent,
   ],
   imports: [
     AdminRoutingModule,
     CommonModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule
 
   ],
   providers: [],
