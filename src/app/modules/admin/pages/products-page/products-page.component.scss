@@ -1,0 +1,22 @@
+.grid-wrapper {
+  width: 100%;
+}
+
+.page {
+  &_title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0 10px ;
+  }
+  &_title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+.found-products {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(86, 85, 85, 0.71);
+}

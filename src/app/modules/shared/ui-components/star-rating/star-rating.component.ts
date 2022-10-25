@@ -39,7 +39,6 @@ stars: {id: number, isActive: boolean}[] = [
       }
       return star
     });
-    console.log(this.productRating);
   }
 
 }
