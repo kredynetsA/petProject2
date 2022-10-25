@@ -7,8 +7,13 @@ import { ProductsPageComponent } from './pages/products-page/products-page.compo
 import { OrdersPageComponent } from './pages/orders-page/orders-page.component';
 import {MatIconModule} from "@angular/material/icon";
 import {SharedModule} from "../shared/shared.module";
-import {BrowserModule} from "@angular/platform-browser";
-import {HttpClientModule} from "@angular/common/http";
+import {AgGridModule} from "ag-grid-angular";
+import { BtnCellRendererComponent } from './ui-components/btn-cell-renderer/btn-cell-renderer.component';
+import {MatButtonModule} from "@angular/material/button";
+import { ImgCellRendererComponent } from './ui-components/img-cell-renderer/img-cell-renderer.component';
+import { RatingCellRendererComponent } from './ui-components/rating-cell-renderer/rating-cell-renderer.component';
+import {MatCheckboxModule} from "@angular/material/checkbox";
+import { CheckboxCellRendererComponent } from './ui-components/checkbox-cell-renderer/checkbox-cell-renderer.component';
 
 
 
@@ -17,13 +22,20 @@ import {HttpClientModule} from "@angular/common/http";
     AdminComponent,
     ProductsPageComponent,
     OrdersPageComponent,
+    BtnCellRendererComponent,
+    ImgCellRendererComponent,
+    RatingCellRendererComponent,
+    CheckboxCellRendererComponent
   ],
   imports: [
     AdminRoutingModule,
     CommonModule,
     MatSidenavModule,
     MatIconModule,
+    MatButtonModule,
     SharedModule,
+    AgGridModule,
+    MatCheckboxModule
 
   ],
   providers: [],

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpErrorResponse} from "@angular/common/http";
-import {catchError, retry, throwError} from "rxjs";
+import {HttpClient} from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +10,9 @@ export class ProductsService {
 
   getProducts() {
     return this.http.get('http://localhost:3000/api/product')
+  }
 
+  deleteProduct(productId: number) {
+    return this.http.delete(`http://localhost:3000/api/product/${productId}`)
   }
 }

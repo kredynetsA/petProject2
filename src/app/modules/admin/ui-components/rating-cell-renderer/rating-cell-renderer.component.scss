@@ -1,0 +1,9 @@
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+  &_number {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

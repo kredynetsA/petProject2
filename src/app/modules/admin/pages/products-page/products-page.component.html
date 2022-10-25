@@ -1,6 +1,39 @@
-<!--<div class="container">-->
+<div class="page_title-wrapper">
   <h1 class="page_title">Products</h1>
-  <hr class="horizontal-line">
+  <button mat-raised-button  color="primary">
+    <mat-icon>add</mat-icon>
+    Add Product
+  </button>
+</div>
+
+<span class="found-products">Found products: {{products?.length}}</span>
+<hr class="horizontal-line">
+
+<div class="grid-wrapper">
+  <ag-grid-angular
+    style=" width: 100%; height: 500px"
+    class="ag-theme-alpine "
+    [defaultColDef]="defaultColDef"
+    (firstDataRendered)="onFirstDataRendered($event)"
+    (gridReady)="onGridReady($event)"
+    [rowData]="products"
+    [pagination]="true"
+    [columnDefs]="columnDefs">
+  </ag-grid-angular>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--  <div class="custom-card_wrapper">-->
 <!--    <app-card class="custom-card_card" *ngFor="let product of products" [product]="product"></app-card>-->
 <!--  </div>-->
